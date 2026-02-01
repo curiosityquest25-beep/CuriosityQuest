@@ -1,0 +1,33 @@
+{
+  "name": "STEMWord",
+  "type": "object",
+  "properties": {
+    "word": {
+      "type": "string",
+      "description": "The STEM word"
+    },
+    "definition": {
+      "type": "string",
+      "description": "Kid-friendly definition"
+    },
+    "example": {
+      "type": "string",
+      "description": "Example of how it's used"
+    },
+    "fields": {
+      "type": "string",
+      "description": "Fields where this word is applicable (e.g. Biology, Physics, Chemistry)"
+    },
+    "word_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date this word is featured"
+    }
+  },
+  "required": [
+    "word",
+    "definition",
+    "example",
+    "word_date"
+  ]
+}
