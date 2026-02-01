@@ -1,0 +1,55 @@
+{
+  "name": "VirtualActivity",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Activity title"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "Python"
+      ],
+      "description": "Programming language"
+    },
+    "activity_type": {
+      "type": "string",
+      "enum": [
+        "Lesson",
+        "Program",
+        "Project"
+      ],
+      "description": "Type of activity"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ],
+      "description": "Difficulty level"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full lesson content in markdown"
+    },
+    "order": {
+      "type": "number",
+      "description": "Display order"
+    }
+  },
+  "required": [
+    "title",
+    "language",
+    "activity_type",
+    "description",
+    "content",
+    "order"
+  ]
+}
