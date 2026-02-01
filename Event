@@ -1,0 +1,56 @@
+{
+  "name": "Event",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Event name"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Event date"
+    },
+    "time": {
+      "type": "string",
+      "description": "Event time (e.g., '2:00 PM - 4:00 PM')"
+    },
+    "location": {
+      "type": "string",
+      "description": "Venue name and address"
+    },
+    "description": {
+      "type": "string",
+      "description": "What participants will explore"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "library",
+        "school",
+        "community_center",
+        "virtual"
+      ],
+      "description": "Type of venue"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Optional event photo"
+    },
+    "is_past": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether event has already happened"
+    },
+    "highlights": {
+      "type": "string",
+      "description": "For past events - what students explored and learned"
+    }
+  },
+  "required": [
+    "title",
+    "date",
+    "location",
+    "description"
+  ]
+}
