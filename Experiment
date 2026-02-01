@@ -1,0 +1,53 @@
+{
+  "name": "Experiment",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Experiment title"
+    },
+    "topic": {
+      "type": "string",
+      "enum": [
+        "physics",
+        "biology",
+        "chemistry",
+        "engineering"
+      ],
+      "description": "Science topic category"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "Beginner",
+        "Medium",
+        "Advanced"
+      ],
+      "description": "Difficulty level"
+    },
+    "materials": {
+      "type": "string",
+      "description": "Required materials (one per line)"
+    },
+    "instructions": {
+      "type": "string",
+      "description": "Step-by-step instructions"
+    },
+    "what_you_learn": {
+      "type": "string",
+      "description": "Learning outcomes and concepts"
+    },
+    "order": {
+      "type": "number",
+      "description": "Display order"
+    }
+  },
+  "required": [
+    "title",
+    "topic",
+    "difficulty",
+    "materials",
+    "instructions",
+    "what_you_learn"
+  ]
+}
