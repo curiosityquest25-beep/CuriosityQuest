@@ -1,0 +1,53 @@
+{
+  "name": "STEMPost",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Post title as a question or topic"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Brief teaser for the post"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full explanation in markdown"
+    },
+    "real_world_connection": {
+      "type": "string",
+      "description": "How this applies to everyday life"
+    },
+    "fun_fact": {
+      "type": "string",
+      "description": "An interesting related fact"
+    },
+    "topic": {
+      "type": "string",
+      "enum": [
+        "science",
+        "technology",
+        "engineering",
+        "math",
+        "general"
+      ],
+      "description": "STEM category"
+    },
+    "week_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Week this post is featured"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Optional illustration"
+    }
+  },
+  "required": [
+    "title",
+    "summary",
+    "content",
+    "topic",
+    "week_date"
+  ]
+}
